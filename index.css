@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+:root {
+  --Strong-cyan: hsl(172, 67%, 45%);
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Grayish-cyan: hsl(184, 14%, 56%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%);
+  --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+  --Font-size: 1.5rem; /* (form inputs) */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 85%;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: var(--Light-grayish-cyan);
+  padding: 5rem;
+}
+
+.logo {
+  margin-bottom: 5rem;
+}
+
+.calculator {
+  padding: 2rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  background-color: var(--White);
+  width: fit-content;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.calculator .right {
+  padding: 3.75rem 2.5rem 2.5rem;
+  background-color: var(--Very-dark-cyan);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  width: 25rem;
+}
+
+.calculator .right .total {
+  margin-bottom: 7rem;
+  margin-top: 1.5rem;
+}
+
+.calculator .right .total div,
+.calculator .right .tipa div {
+  color: var(--Strong-cyan);
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.calculator .right h6 {
+  color: var(--White);
+}
+
+.calculator .right p {
+  color: var(--Grayish-cyan);
+  font-size: 13px;
+}
+
+.calculator .right button {
+  width: 100%;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  padding: 0.5rem 0;
+  background-color: var(--Dark-grayish-cyan);
+  border: none;
+  color: var(--Very-dark-cyan);
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+.calculator .right button:hover {
+  background-color: var(--Light-grayish-cyan);
+}
+
+.calculator .left {
+  width: 25rem;
+}
+
+.calculator .left form {
+  width: 100%;
+  height: 100%;
+}
+
+.calculator .left form .bill label,
+.calculator .left form .numpeople label {
+  margin-bottom: 0.3rem;
+  color: var(--Very-dark-cyan);
+}
+
+.calculator .left form .bill input,
+.calculator .left form .numpeople input {
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  color: var(--Very-dark-cyan);
+  text-align: end;
+  border: none;
+  background-color: var(--Very-light-grayish-cyan);
+  height: 3.125rem;
+  font-size: var(--Font-size);
+  outline: none;
+}
+
+.calculator .left form .numpeople label {
+  color: var(--Dark-grayish-cyan);
+}
+
+.calculator .left form .bill input:focus,
+.calculator .left form .numpeople input:focus {
+  outline: 2.5px solid var(--Strong-cyan);
+}
+
+::placeholder {
+  color: var(--Dark-grayish-cyan);
+}
+
+.calculator .left form .tips label {
+  color: var(--Dark-grayish-cyan);
+  margin-bottom: 0.8rem;
+}
+
+.calculator .left form .tips .btns {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.calculator .left form .tips .btns p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  height: 2.7rem;
+  background-color: var(--Very-dark-cyan);
+  border: none;
+  color: var(--White);
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+.calculator .left form .tips .btns p:hover {
+  background-color: var(--Strong-cyan);
+}
+
+.calculator .left form .tips .btns input {
+  max-width: 8rem;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  height: 2.7rem;
+  color: var(--Very-dark-cyan);
+  text-align: center;
+  border: none;
+  background-color: var(--Very-light-grayish-cyan);
+  font-size: var(--Font-size);
+  outline: none;
+}
+
+.calculator .left form .tips .btns input:focus {
+  outline: 2.5px solid var(--Strong-cyan);
+}
+
+@media (max-width: 912px) {
+  html {
+    font-size: 100%;
+  }
+  .calculator {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .calculator .left form .tips .btns {
+    margin-bottom: 0.3rem;
+  }
+}
+
+@media (max-width: 540px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 55%;
+  }
+}
